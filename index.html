@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculator</title>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="calculator-box">
+				<div class="display-number">
+					<div id="display-num-1"></div>
+					<div id="display-num-2"></div>
+				</div>
+				<div class="button-box">
+					<div class="flex-row">
+						<div class="flex-column">
+							<button onclick="addString('C')">C</button>
+							<button onclick="addString('7')">7</button>
+							<button onclick="addString('4')">4</button>
+							<button onclick="addString('1')">1</button>
+							<button onclick="addString('.')">.</button>
+						</div>
+						<div class="flex-column">
+							<button onclick="addString('x')">x</button>
+							<button onclick="addString('8')">8</button>
+							<button onclick="addString('5')">5</button>
+							<button onclick="addString('2')">2</button>
+							<button onclick="addString('0')">0</button>
+						</div>
+						<div class="flex-column">
+							<button onclick="addString('/')">/</button>
+							<button onclick="addString('9')">9</button>
+							<button onclick="addString('6')">6</button>
+							<button onclick="addString('3')">3</button>
+							<button onclick="addString(',')">,</button>
+						</div>
+						<div class="flex-column">
+							<button onclick="addString('-')">-</button>
+							<button onclick="addString('+')" style="flex-grow: 1">+</button>
+							<button onclick="addString('=')">=</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
